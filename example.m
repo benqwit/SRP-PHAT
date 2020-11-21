@@ -39,10 +39,10 @@ plot3(mics(:,1),mics(:,2),mics(:,3), 'x','MarkerSize',6,'Color','blue')
 grid on    
 
 [TH,PHI,d] = cart2sph(source(1),source(2),source(3));
-az_source=TH*180/pi;
-el_source=PHI*180/pi;
+az_source=TH*180/pi
+el_source=PHI*180/pi
 
 
 [TH,PHI] = cart2sph(sourceDeterminated(1),sourceDeterminated(2),sourceDeterminated(3));
-az_SRC=TH*180/pi;
-el_SRC=PHI*180/pi;
+az_SRC=TH*180/pi
+el_SRC=PHI*180/pi
