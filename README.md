@@ -1,4 +1,4 @@
-Acousting source sound localization using srp-phat in matlab.
+Acoustic source sound localization using srp-phat in matlab.
 
 #Requiments:
     
