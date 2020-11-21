@@ -28,13 +28,13 @@ clc
 %number of points
 n=4000000;
     
-[sourceDeterminated]=SRP_PHAT_SRC(mics, fs, signal, n, V_Min, V_Max);
+[sourceD]=SRP_PHAT_SRC(mics, fs, signal, n, V_Min, V_Max);
 
 
 figure
 plot3(source(1),source(2),source(3), 'd','MarkerSize',6,'MarkerFaceColor','blue')
 hold on
-plot3(sourceDeterminated(1),sourceDeterminated(2),sourceDeterminated(3), 'o','MarkerSize',6,'MarkerFaceColor','red')   
+plot3(sourceD(1),sourceD(2),sourceD(3), 'o','MarkerSize',6,'MarkerFaceColor','red')   
 plot3(mics(:,1),mics(:,2),mics(:,3), 'x','MarkerSize',6,'Color','blue')
 grid on    
 
@@ -43,6 +43,6 @@ az_source=TH*180/pi
 el_source=PHI*180/pi
 
 
-[TH,PHI] = cart2sph(sourceDeterminated(1),sourceDeterminated(2),sourceDeterminated(3));
+[TH,PHI] = cart2sph(sourceD(1),sourceD(2),sourceD(3));
 az_SRC=TH*180/pi
 el_SRC=PHI*180/pi
