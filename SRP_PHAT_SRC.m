@@ -4,7 +4,7 @@ function [source]=SRP_PHAT_SRC(mics, fs, s, n, lsb, usb)
        % s - signal
        % n - number of points
        % 
-tic
+
  
        
         [nr_mic,b]=size(mics);
