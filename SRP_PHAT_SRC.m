@@ -42,7 +42,7 @@ distanceDifference=zeros((nr_mic*(nr_mic-1)/2), n);
 
 for(i=1:nr_mic-1)
     for(j=i+1:nr_mic)
-        %realizare diferenta de distanta
+        
         distanceDifference(idx, :)=distances(i,:)-distances(j,:);
         idx=idx+1;
     end

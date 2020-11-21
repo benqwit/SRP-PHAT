@@ -1,6 +1,5 @@
 function [semnal]=generateSignal(fs, mics, t, source)
-        %the funcion that generating n signal according to the position of the
-        %microphones
+       
          s2=rand(fs*t,1);
        
         [a,b]=size(mics);
@@ -25,7 +24,7 @@ function [semnal]=generateSignal(fs, mics, t, source)
         Dt=(Dd*1)/V_s;
 
         xes=round((1*fs)*Dt); %number of delayed samples
-%         xes=16;
+
 
 
         semnal=zeros(a, fs*t);
