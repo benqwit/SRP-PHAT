@@ -23,7 +23,7 @@ function [semnal]=generateSignal(fs, mics, t, source)
         V_s=340; %m/s
         Dt=(Dd*1)/V_s;
 
-        xes=round((1*fs)*Dt); %number of delayed samples
+        xes=round((1*fs)*Dt);
 
 
 
